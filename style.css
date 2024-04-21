@@ -1,36 +1,55 @@
-/* Primary Colors:
-- #002B5B (Midnight Blue) - A deep, rich blue for headings and primary elements
-- #062a53 (Lighter Midnight Blue)
-- #595660 (Dark Slate Gray) - A dark, muted shade of gray to complement the blues
+/* Background Color:
 
-Accent Colors:
-- #BAC7E7 (Bright Blue) - A bright, vibrant blue for accents and highlights
-- #616681 (Gray Blue) - A cool, grayish-blue for secondary elements or backgrounds
-- #B2C8DF (Light Steel Blue) - A soft, desaturated blue for subtle accents or text
+    White: #FFFFFF
+    Primary Accent Colors:
 
-Neutral Colors:
-- #FFFFFF (White) - For text on dark backgrounds and content areas
-- #333333 (Dark Gray) - For body text or other content on lighter backgrounds*/
+    Dark Brown: #8B4513
+    Burnt Sienna: #E97451
+    Secondary Accent Colors:
+
+    Light Brown: #D2B48C
+    Pastel Red: #FF9999
+    Complementary Colors:
+
+    Cream: #FFFDD0
+    Beige: #F5F5DC */
+
+@font-face {
+    font-family: "Life Craft";
+    src: url(./media/LifeCraft_Font.ttf);
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url(./media/Cinzel-VariableFont_wght.ttf);
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --primaryaccent: #8B4513;
+    --primaryaccenttwo: #E97451;
+    --secondaryaccent: #D2B48C;
+    --secondaryaccenttwo: #F2E2C5;
+    --complementarycolors: #FFFDD0;
+}
 
 * {
-    color: #fff;
-    background-color: #595660;
+    color: var(--black);
+    background-color: var(--secondaryaccenttwo);
     margin: 0;
 }
 
-.banner {
-    width: 100%;
-    height: 350px;
-}
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #002B5B;
+    background-color: var(--secondaryaccent);
+    border-bottom: var(--black) 0.1rem solid;
 }
-  
+
 li {
     float: left;
 }
@@ -39,16 +58,37 @@ li {
     float: right;
 }
 
-
 li a {
     display: block;
-    color: #fff;
+    color: var(--black);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.5rem 0.9rem;
     text-decoration: none;
-    background-color: #002B5B;
+    font-family: "Life Craft";
+    background-color: var(--secondaryaccent);
+    font-size: 1.3rem;
+    font-weight: bold;
 }
   
 li a:hover {
-    background-color: #111;
+    background-color: var(--complementarycolors);
+}
+
+h1 {
+    font-family: "Cenzil";
+    font-size: 1.5rem;
+    border-bottom: var(--black) 0.1rem solid;
+    background-color: var(--secondaryaccent);
+    font-weight: bold;
+}
+
+.infopanel {
+    margin: 5%;
+    font-size: 1rem;
+    width: 90%;
+    height: 20%;
+    border: var(--black) 0.2rem solid;
+    border-radius: 0.4rem;
+    text-align: center;
+    background-color: var(--secondaryaccenttwo);
 }
