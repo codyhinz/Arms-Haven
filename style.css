@@ -1,37 +1,41 @@
 /* Background Color:
 
-    White: #FFFFFF
-    Primary Accent Colors:
-
-    Dark Brown: #8B4513
-    Burnt Sienna: #E97451
-    Secondary Accent Colors:
-
-    Light Brown: #D2B48C
-    Pastel Red: #FF9999
-    Complementary Colors:
-
-    Cream: #FFFDD0
-    Beige: #F5F5DC */
-
-@font-face {
-    font-family: "Life Craft";
-    src: url(./media/LifeCraft_Font.ttf);
-}
+    --white: #fff;
+    --black: #000;
+    --primaryaccent: #4a3214;
+    --primaryaccenttwo: #ff0000;
+    --secondaryaccent: #D2B48C;
+    --secondaryaccenttwo: #F2E2C5;
+    --complementarycolor: #c4af89;
+    --complementarycolortwo: #940909;
+    
+    Mobile sizing/Responsiveness needs to be completed
+*/
 
 @font-face {
     font-family: "Cinzel";
     src: url(./media/Cinzel-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: "Kings and Pirates";
+    src: url(./media/KingsAndPirates-p7EAK.ttf);
+}
+
+@font-face {
+    font-family: "Life Craft";
+    src: url(./media/LifeCraft_Font.ttf);
+}
+
 :root {
     --white: #fff;
     --black: #000;
-    --primaryaccent: #8B4513;
-    --primaryaccenttwo: #E97451;
+    --primaryaccent: #4a3214;
+    --primaryaccenttwo: #ff0000;
     --secondaryaccent: #D2B48C;
     --secondaryaccenttwo: #F2E2C5;
-    --complementarycolors: #FFFDD0;
+    --complementarycolor: #c4af89;
+    --complementarycolortwo: #940909;
 }
 
 * {
@@ -71,24 +75,68 @@ li a {
 }
   
 li a:hover {
-    background-color: var(--complementarycolors);
+    color: var(--primaryaccenttwo);
 }
 
+
 h1 {
-    font-family: "Cenzil";
+    margin: 5%;
+    text-align: center;
+    font-family: "Kings and Pirates";
+    font-style: italic;
+    font-size: 3rem;
+    color: var(--complementarycolortwo);
+}
+
+h2 img {
+    width: 1.4rem;
+    margin-top: 0.1rem;
+    margin-right: 0.15rem;
+    float: right;
+    background-color: var(--secondaryaccent);
+}
+
+h2 {
+    font-family: "Life Craft";
     font-size: 1.5rem;
     border-bottom: var(--black) 0.1rem solid;
-    background-color: var(--secondaryaccent);
+    background-color: var(--complementarycolor);
     font-weight: bold;
 }
+
+/* Below is the main panels for all text information */
 
 .infopanel {
     margin: 5%;
     font-size: 1rem;
     width: 90%;
-    height: 20%;
     border: var(--black) 0.2rem solid;
     border-radius: 0.4rem;
     text-align: center;
-    background-color: var(--secondaryaccenttwo);
+    background-color: var(--secondaryaccent);
+}
+
+p {
+    text-align: left;
+    margin: 1rem 0;
+    font-size: 1rem;
+    background-color: var(--secondaryaccent);
+    font-family: Arial;
+}
+
+.armshaven {
+    background-color: var(--secondaryaccent);
+    font-family: "Kings and Pirates";
+    color: var(--complementarycolortwo);
+}
+
+h3 {
+    text-align: left;
+    background-color: var(--secondaryaccent);
+}
+
+h4 {
+    border-top: var(--black) 0.2rem dashed;
+    border-bottom: var(--black) 0.2rem dashed;
+    background-color: var(--complementarycolor);
 }
