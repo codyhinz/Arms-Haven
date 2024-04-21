@@ -75,10 +75,16 @@ li a {
     font-size: 1.3rem;
     font-weight: bold;
 }
-  
+
+#inactive:hover {
+    color: #808080;
+}
+
 li a:hover {
     color: var(--primaryaccenttwo);
 }
+
+
 
 main {
     position: relative;
