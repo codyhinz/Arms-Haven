@@ -12,6 +12,8 @@
     Mobile sizing/Responsiveness needs to be completed
 */
 
+/* Fonts */
+
 @font-face {
     font-family: "Cinzel";
     src: url(./media/Cinzel-VariableFont_wght.ttf);
@@ -27,6 +29,7 @@
     src: url(./media/LifeCraft_Font.ttf);
 }
 
+/* Root Selectors */
 
 :root {
     --white: #fff;
@@ -39,13 +42,14 @@
     --complementarycolortwo: #940909;
 }
 
-
 * {
     color: var(--black);
     background-color: var(--secondaryaccenttwo);
     margin: 0;
-    z-index: 1;
+    z-index: 1; /* Sets page at index 1 by default */
 }
+
+/* Nav selectors */
 
 nav ul {
     list-style: none;
@@ -68,7 +72,6 @@ nav li {
 nav li a {
     display: block;
     color: var(--black);
-    text-align: center;
     padding: 0.5rem 0.9rem;
     text-decoration: none;
     font-family: "Life Craft";
@@ -84,6 +87,8 @@ nav li a {
 li a:hover {
     color: var(--primaryaccenttwo);
 }
+
+/* Main/Body elements */
 
 main {
     position: relative;
@@ -128,27 +133,27 @@ h2 {
     font-weight: bold;
 }
 
-/* Below is the main panels for all text information */
-
 .infopanel {
     margin: 3% 10% 3% 10%;
-    font-size: 1rem;
     width: 70%;
     border: var(--black) 0.2rem solid;
     border-bottom: 0;
     border-radius: 0.4rem;
-    text-align: center;
     background-color: var(--secondaryaccenttwo);
     box-shadow: 0.15rem 0.15rem var(--primaryaccent);
 }
 
 p {
-    text-align: left;
-    margin: 1rem 0;
-    font-size: 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
     background-color: var(--secondaryaccenttwo);
     font-family: Arial;
 }
+
+ol {
+    margin: 0.5rem 0;
+}
+
 
 .armshaven {
     background-color: var(--secondaryaccenttwo);
@@ -157,7 +162,6 @@ p {
 }
 
 h3 {
-    text-align: left;
     background-color: var(--secondaryaccenttwo);
 }
 
@@ -169,4 +173,5 @@ h4 {
     border-top: var(--black) 0.2rem dashed;
     border-bottom: var(--black) 0.2rem dashed;
     background-color: var(--secondaryaccent);
+    text-align: center;
 }
