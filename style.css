@@ -84,8 +84,6 @@ li a:hover {
     color: var(--primaryaccenttwo);
 }
 
-
-
 main {
     position: relative;
 }
@@ -94,10 +92,11 @@ main::after {
     content: "";
     position: absolute;
     bottom: 6rem;
-    right: 0rem;
-    width: 20%;
+    right: 1rem;
+    width: 18%;
     height: 65%;
     background-image: url('./media/gmwarrior.png');
+    transform: rotate(3deg);
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -117,14 +116,14 @@ h2 img {
     margin-top: 0.1rem;
     margin-right: 0.15rem;
     float: right;
-    background-color: var(--complementarycolor);
+    background-color: var(--secondaryaccent);
 }
 
 h2 {
     font-family: "Life Craft";
     font-size: 1.5rem;
     border-bottom: var(--black) 0.1rem solid;
-    background-color: var(--complementarycolor);
+    background-color: var(--secondaryaccent);
     font-weight: bold;
 }
 
@@ -135,9 +134,10 @@ h2 {
     font-size: 1rem;
     width: 70%;
     border: var(--black) 0.2rem solid;
+    border-bottom: 0;
     border-radius: 0.4rem;
     text-align: center;
-    background-color: var(--secondaryaccent);
+    background-color: var(--secondaryaccenttwo);
     box-shadow: 0.15rem 0.15rem var(--primaryaccent);
 }
 
@@ -145,23 +145,27 @@ p {
     text-align: left;
     margin: 1rem 0;
     font-size: 1rem;
-    background-color: var(--secondaryaccent);
+    background-color: var(--secondaryaccenttwo);
     font-family: Arial;
 }
 
 .armshaven {
-    background-color: var(--secondaryaccent);
+    background-color: var(--secondaryaccenttwo);
     font-family: "Kings and Pirates";
     color: var(--complementarycolortwo);
 }
 
 h3 {
     text-align: left;
-    background-color: var(--secondaryaccent);
+    background-color: var(--secondaryaccenttwo);
+}
+
+#spoiler {
+    display: none;
 }
 
 h4 {
     border-top: var(--black) 0.2rem dashed;
     border-bottom: var(--black) 0.2rem dashed;
-    background-color: var(--complementarycolor);
+    background-color: var(--secondaryaccent);
 }
