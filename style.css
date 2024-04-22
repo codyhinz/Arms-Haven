@@ -39,6 +39,7 @@
     --complementarycolortwo: #940909;
 }
 
+
 * {
     color: var(--black);
     background-color: var(--secondaryaccenttwo);
@@ -46,7 +47,7 @@
     z-index: 1;
 }
 
-ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -56,7 +57,7 @@ ul {
     box-shadow: 0.15rem 0.15rem var(--primaryaccent);
 }
 
-li {
+nav li {
     float: left;
 }
 
@@ -64,7 +65,7 @@ li {
     float: right;
 }
 
-li a {
+nav li a {
     display: block;
     color: var(--black);
     text-align: center;

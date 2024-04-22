@@ -1,7 +1,11 @@
 
 const spoilerH4 = () => {
     const displayParagraph = document.getElementById("spoiler");
-    displayParagraph.style.display = "block";
+    if (displayParagraph.style.display === "block") {
+        displayParagraph.style.display = "none";
+      } else {
+        displayParagraph.style.display = "block";
+    }
 }
 
 const clickableSpoiler = document.querySelector("h4");
