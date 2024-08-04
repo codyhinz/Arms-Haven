@@ -89,8 +89,10 @@ li a:hover {
 /* Main/Body elements */
 
 body {
-    background-image: url("media/gmwarrior.png");
+    background-image: url("media/shadowmourne.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--secondaryaccenttwo);
 }
 
 h1 {
