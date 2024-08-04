@@ -114,6 +114,10 @@ h2 img {
     float: right;
 }
 
+h3 img {
+    width: 1.8rem;
+}
+
 h2 {
     font-family: "Life Craft";
     font-size: 1.5rem;
@@ -152,6 +156,8 @@ ol {
 
 h3 {
     background-color: var(--secondaryaccenttwo);
+    display: flex;
+    align-items: center;
 }
 
 #spoiler {
