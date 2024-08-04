@@ -39,7 +39,7 @@
     --secondaryaccent: #D2B48C;
     --secondaryaccenttwo: #F2E2C5;
     --complementarycolor: #c4af89;
-    --complementarycolortwo: #940909;
+    --complementarycolortwo: #684312;
 }
 
 * {
@@ -89,10 +89,13 @@ li a:hover {
 /* Main/Body elements */
 
 body {
-    background-image: url("media/shadowmourne.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--secondaryaccenttwo);
+    background:
+        url('media/shadowmourne.png'),
+        radial-gradient(var(--secondaryaccenttwo), var(--secondaryaccent));
+    background-size: contain, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    min-height: 100vh;
 }
 
 h1 {
@@ -124,7 +127,7 @@ h2 {
     width: 70%;
     border: var(--black) 0.2rem solid;
     border-bottom: 0;
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
     background-color: var(--secondaryaccenttwo);
     box-shadow: 0.15rem 0.15rem var(--primaryaccent);
 }
@@ -162,16 +165,4 @@ h4 {
     text-align: center;
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    border: var(--black) 0.1rem solid;
-    background-color: var(--secondaryaccent);
-    box-shadow: 0.15rem 0.15rem var(--primaryaccent);
-}
-
-section p {
-    background-color: var(--secondaryaccent);
-}
-/*  */
+/* Footer, Credits and More */
