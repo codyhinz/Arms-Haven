@@ -39,7 +39,7 @@
     --secondaryaccent: #D2B48C;
     --secondaryaccenttwo: #F2E2C5;
     --complementarycolor: #c4af89;
-    --complementarycolortwo: #684312;
+    --complementarycolortwo: #8d1010;
 }
 
 * {
@@ -90,9 +90,9 @@ li a:hover {
 
 body {
     background:
-        url('/media/shadowmourne.png'),
-        radial-gradient(var(--secondaryaccenttwo), var(--secondaryaccent));
-    background-size: contain, 100% 100%;
+        url('/media/grandmarshallclaymore.png'),
+        radial-gradient(var(--secondaryaccent), var(--secondaryaccenttwo));
+    background-size: 2100px, 100% 100%;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     min-height: 100vh;
@@ -127,8 +127,8 @@ h2 {
 }
 
 .infopanel {
-    margin: 3% 10% 3% 10%;
-    width: 70%;
+    margin: 2% 8% 2% 8%;
+    width: 82%;
     border: var(--black) 0.2rem solid;
     border-bottom: 0;
     border-radius: 0.2rem;
@@ -144,7 +144,7 @@ p {
 }
 
 ol {
-    margin: 0.5rem 0;
+    margin: 0.1rem 0;
 }
 
 
