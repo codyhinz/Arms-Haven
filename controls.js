@@ -1,12 +1,11 @@
 
-const spoilerH4 = () => {
-    const displayParagraph = document.getElementById("spoiler");
-    if (displayParagraph.style.display === "block") {
-        displayParagraph.style.display = "none";
-      } else {
-        displayParagraph.style.display = "block";
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const spoilerH4 = document.querySelector('.spoiler-header');
+  const spoilerContent = document.getElementById('spoiler');
 
-const clickableSpoiler = document.querySelector("h4");
-clickableSpoiler.addEventListener('click', spoilerH4);
+  if (spoilerH4 && spoilerContent) {
+      spoilerH4.addEventListener('click', function() {
+          spoilerContent.classList.toggle('hidden');
+      });
+  }
+});

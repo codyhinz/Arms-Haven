@@ -1,66 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Arms Haven</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="controls.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arms Haven - Changes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/media/icons/mortalstrikeicon.ico">
+    <script src="controls.js" defer></script>
+</head>
+<body>
     <header>
         <nav>
             <ul>
                 <li><a href='index.html'>Home</a></li>
-                <li><a href='changes.html'>Changes</a></li>
-                <li><a href='' id="inactive">Leveling Guide</a></li>
-                <li><a href='' id="inactive">PVE Guide</a></li>
-                <li></li>
-                <li class="menu-right"><a href='' id="inactive">Contact</a></li>
+                <li><a href='changes.html' class="active">Changes</a></li>
+                <li><a href='#' class="inactive">Leveling Guide</a></li>
+                <li><a href='#' class="inactive">PVE Guide</a></li>
+                <li class="menu-right"><a href='#' class="inactive">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <body>
-        <main>
-            <h1>Arms Haven</h1>
-            <section>
-                <div class="infopanel">
-                    <h2>Rage generation</h2>
-                    <p>Previously in Wrath of the Lich King, rage generation was as simple as
-                        do or take more damage and gain more rage in return. Rage has been normalized overall in cataclysm. 
-                        Now when you take damage you gain rage based on the amount of health lost compared to your overall health.
-                        Your damage output has no effect on rage generation now. Also if you critical strike you will generate double the rage.
-                        This effectively brings up the floor of warrior damage, and allows us to scale very well as we are famous for.
-                    </p>
-                </div>
-                <div class="infopanel">
-                    <h2>Ability Changes</h2>
-                    <h3><img src="/media/icons/battleshouticon.png" alt="Battle Shout Icon">Battle and Commanding Shout<img src="/media/icons/commandingshouticon.png" alt="Commanding Shout Icon"></h3>
-                    <p>Now both share a 1 minute cooldown and now give Strength and Agility or Stamina respectively to all people within 45 yards.
-                        These abilites also generate 20 rage.</p>
-                    <h3><img src="/media/icons/bladestormicon.png" alt="Bladestorm Icon">Bladestorm</h3>
-                    <p>Super improved from WOTLK, now hits for 150% weapon damage(up from 100%) on all targets 
-                        within range every 1 second for 6 seconds.</p>
-                    <h3><img src="/media/icons/heroicstrikeicon.png" alt="Heroic Strike Icon">Heroic Strike and Cleave<img src="/media/icons/cleaveicon.png" alt="Cleave Icon"></h3>
-                    <p>These abilities now share a 3 second cooldown by default(during Inner Rage these abilites now have a 1.5 second cooldown). However with the 
-                        great sundering there are no longer auto-attack modifier abilites. So these abilities now hit instantly
-                         instead of "queueing" as they used to.</p>
-                    <h3><img src="/media/icons/recklessnessicon.png" alt="Recklessness Icon">Recklessness</h3>
-                    <p>Now a 5 minute cooldown, but one of the better iterations of this ability. You now gain 50% critical 
-                        strike rating on all special attacks(yellow hits) for 12 seconds.</p>
-                    <h3><img src="/media/icons/rendicon.png" alt="Rend Icon">Rend</h3>
-                    <p>Most improved, this ability is actually used, and vital for your damage profile now. Scales 
-                        dynamically like most debuffs in cataclysm(meaning your attack power increasing will increase its damage, so no snapshotting).</p>
-                    <h3><img src="/media/icons/slamicon.png" alt="Slam Icon">Slam</h3>
-                    <p>This ability now can be used while moving and is a much faster cast time(modified by haste, base cast 
-                        time is 0.5 seconds).</p>
-                    <h3><img src="/media/icons/whirlwindicon.png" alt="Whirlwind Icon">Whirlwind</h3>
-                    <p>Pretty big improvement from wrath that it is now uncapped on targets however the damage is pretty toned down by comparison to previous iterations. 
-                        If it hits more than 4 targets it's cooldown will be reduced by 6 seconds. (10 seconds down to 4 seconds)
-                    </p>
-                    <h3>Stance Requirements have been removed from a few key abilites:</h3><h3><img src="/media/icons/pummelicon.png" alt="Pummel Icon">Pummel and Shield Wall<img src="/media/icons/shieldwallicon.png" alt="Shield Wall Icon"></h3>
-                </div>
-            </section>
-        </main>
-    </body>
-    <footer>
+    
+    <main>
+        <h1>Cataclysm Changes</h1>
         
+        <section class="infopanel">
+            <h2><img src="/media/icons/berserkerrageicon.png" alt="Berserker Rage Icon">Rage Generation</h2>
+            <p>Rage generation has been normalized in Cataclysm. Now when you take damage, you gain rage based on the amount of health lost compared to your overall health. Your damage output no longer affects rage generation. Critical strikes now generate double the rage, effectively bringing up the floor of warrior damage and allowing for better scaling.</p>
+        </section>
+        
+        <section class="infopanel">
+            <h2><img src="/media/icons/warriorclassicon.png" alt="Warrior Class Icon">Ability Changes</h2>
+            
+            <div class="ability-grid">
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/battleshouticon.png" alt="Battle Shout Icon">
+                        <span class="ability-name">Battle and Commanding Shout</span>
+                        <img src="/media/icons/commandingshouticon.png" alt="Commanding Shout Icon">
+                    </h3>
+                    <p>Now share a 1 minute cooldown. Give Strength and Agility or Stamina respectively to all people within 45 yards. Generate 20 rage.</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/bladestormicon.png" alt="Bladestorm Icon">
+                        <span class="ability-name">Bladestorm</span>
+                    </h3>
+                    <p>Improved to hit for 150% weapon damage (up from 100%) on all targets within range every 1 second for 6 seconds.</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/heroicstrikeicon.png" alt="Heroic Strike Icon">
+                        <span class="ability-name">Heroic Strike and Cleave</span>
+                        <img src="/media/icons/cleaveicon.png" alt="Cleave Icon">
+                    </h3>
+                    <p>Now share a 3 second cooldown (1.5 seconds during Inner Rage). Hit instantly instead of "queueing" as they used to.</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/recklessnessicon.png" alt="Recklessness Icon">
+                        <span class="ability-name">Recklessness</span>
+                    </h3>
+                    <p>Now a 5 minute cooldown. Grants 50% critical strike rating on all special attacks for 12 seconds.</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/rendicon.png" alt="Rend Icon">
+                        <span class="ability-name">Rend</span>
+                    </h3>
+                    <p>Significantly improved and vital for your damage profile. Scales dynamically with your attack power.</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/slamicon.png" alt="Slam Icon">
+                        <span class="ability-name">Slam</span>
+                    </h3>
+                    <p>Can be used while moving. Faster cast time (modified by haste, base cast time is 0.5 seconds).</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>
+                        <img src="/media/icons/whirlwindicon.png" alt="Whirlwind Icon">
+                        <span class="ability-name">Whirlwind</span>
+                    </h3>
+                    <p>Now uncapped on targets but with reduced damage. Cooldown reduced by 6 seconds if it hits more than 4 targets.</p>
+                </div>
+                
+                <div class="ability-group">
+                    <h3>Stance Requirement Removals</h3>
+                    <p>Stance requirements have been removed from key abilities:</p>
+                    <ul>
+                        <li><img src="/media/icons/pummelicon.png" alt="Pummel Icon"> Pummel</li>
+                        <li><img src="/media/icons/shieldwallicon.png" alt="Shield Wall Icon"> Shield Wall</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Arms Haven. All rights reserved.</p>
     </footer>
+</body>
 </html>

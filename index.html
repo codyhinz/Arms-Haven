@@ -1,59 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Arms Haven</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="controls.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arms Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/media/icons/mortalstrikeicon.ico">
+    <script src="controls.js" defer></script>
+</head>
+<body>
     <header>
         <nav>
             <ul>
-                <li><a href='index.html'>Home</a></li>
+                <li><a href='index.html' class="active">Home</a></li>
                 <li><a href='changes.html'>Changes</a></li>
-                <li><a href='' id="inactive">Leveling Guide</a></li>
-                <li><a href='' id="inactive">PVE Guide</a></li>
-                <li></li>
-                <li class="menu-right"><a href='' id="inactive">Contact</a></li>
+                <li><a href='#' class="inactive">Leveling Guide</a></li>
+                <li><a href='#' class="inactive">PVE Guide</a></li>
+                <li class="menu-right"><a href='#' class="inactive">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <body>
-        <main>
-            <h1>Arms Haven</h1>
-            <div class="infopanel">
-                <h2><img src="./media/icons/cataicon.png" alt="Cataclysm Icon">Welcome to Cataclysm Classic, Warrior</h1>
-                <h3>What's different about this from other websites?</h3>
-                <p>Sourcing, sourcing, and more sourcing...</p>
-                <h3>The search for information generally follows these steps:</h3>
-                <ol>
-                    <li>Find a website</li>
-                    <li>Fact check this against other websites </li>
-                    <li>Hope theres some sort of information consistency</li>
-                </ol>
-                <p>The key to ensuring the accuracy and reliability of information
-                    found online is thorough sourcing and verification. By cross-referencing
-                    information from multiple credible sources, you can better determine
-                    the validity of the content you encounter on the internet.</p>
-                <h4 onclick="spoilerH4()">Spoiler alert</h4>
-                <p id="spoiler">There is no consistency in the information, there is no
-                     sourcing, and most importantly there is no accountability.</p>
-            </div>
-            <div class="infopanel">
-                <h2><img src="./media/icons/mortalstrikeicon.png" alt="Mortal Strike Icon">Our Mission Statement</h2>
-                <p>This website is simply a passion project. I have loved the warrior 
-                    class fantasy my entire life. Most Cataclysm websites seem to have 
-                    spotty information at best, thus <span class="armshaven">Arms Haven</span> 
-                    was born!</p>
-                <p>I want this to be your one stop shop for all things Arms Warrior. 
-                    I will spend countless hours rummaging through the outdated websites of 2010
-                     and onward, to provide you with the information you deserve.</p>
-                <p>We don't need logins, we don't need hundreds of pages to dig through, we
-                     need information that's appropriately sourced and quick to access.</p>
-                <p>Simple and clean, nothing more, nothing less.</p>
-            </div>
-        </main>
-    </body>
-    <footer>
+    
+    <main>
+        <h1>Arms Haven</h1>
         
+        <section class="infopanel">
+            <h2><img src="./media/icons/cataicon.png" alt="Cataclysm Icon">Welcome to Cataclysm Classic, Warrior</h2>
+            <h3>What's different about this from other websites?</h3>
+            <p>Sourcing, sourcing, and more sourcing...</p>
+            <h3>The search for information generally follows these steps:</h3>
+            <ol>
+                <li>Find a website</li>
+                <li>Fact check this against other websites</li>
+                <li>Hope there's some sort of information consistency</li>
+            </ol>
+            <p>The key to ensuring the accuracy and reliability of information found online is thorough sourcing and verification. By cross-referencing information from multiple credible sources, you can better determine the validity of the content you encounter on the internet.</p>
+            <h4 class="spoiler-header" onclick="spoilerH4()">Spoiler alert</h4>
+            <p id="spoiler" class="hidden">There is no consistency in the information, there is no sourcing, and most importantly there is no accountability.</p>
+        </section>
+        
+        <section class="infopanel">
+            <h2><img src="./media/icons/mortalstrikeicon.png" alt="Mortal Strike Icon">Our Mission Statement</h2>
+            <p>This website is simply a passion project. I have loved the warrior class fantasy my entire life. Most Cataclysm websites seem to have spotty information at best, thus <span class="armshaven">Arms Haven</span> was born!</p>
+            <p>I want this to be your one stop shop for all things Arms Warrior. I will spend countless hours rummaging through the outdated websites of 2010 and onward, to provide you with the information you deserve.</p>
+            <p>We don't need logins, we don't need hundreds of pages to dig through, we need information that's appropriately sourced and quick to access.</p>
+            <p>Simple and clean, nothing more, nothing less.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Arms Haven. All rights reserved.</p>
     </footer>
+</body>
 </html>
