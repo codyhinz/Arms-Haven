@@ -16,17 +16,17 @@
 
 @font-face {
     font-family: "Cinzel";
-    src: url(./media/Cinzel-VariableFont_wght.ttf);
+    src: url(/media/fonts/Cinzel-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Kings and Pirates";
-    src: url(./media/KingsAndPirates-p7EAK.ttf);
+    src: url(/media/fonts/KingsAndPirates-p7EAK.ttf);
 }
 
 @font-face {
     font-family: "Life Craft";
-    src: url(./media/LifeCraft_Font.ttf);
+    src: url(/media/fonts/LifeCraft_Font.ttf);
 }
 
 /* Root Selectors */
@@ -90,7 +90,7 @@ li a:hover {
 
 body {
     background:
-        url('media/shadowmourne.png'),
+        url('/media/shadowmourne.png'),
         radial-gradient(var(--secondaryaccenttwo), var(--secondaryaccent));
     background-size: contain, 100% 100%;
     background-repeat: no-repeat, no-repeat;
