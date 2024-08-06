@@ -35,7 +35,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", sans-serif;
     line-height: 1.6;
     color: var(--black);
     background: url('/media/backgroundimage.png');
@@ -104,10 +104,24 @@ h1 {
     font-family: "Kings and Pirates", sans-serif;
     font-style: italic;
     font-size: 3rem;
-    color: var(--primaryaccenttwo);
+    color: var(--secondaryaccenttwo);
     text-align: center;
     margin-bottom: 2rem;
-    text-shadow: 2px 2px var(--primaryaccent);
+    text-shadow: 0.2rem 0.2rem var(--primaryaccenttwo);
+}
+
+.talents {
+    width: 100%;
+}
+
+.glyphs {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.glyphs p img {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .infopanel {
