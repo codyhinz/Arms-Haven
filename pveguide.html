@@ -24,33 +24,63 @@
     <main>
         <h1>PVE Guide</h1>
         
+        <nav class="page-nav">
+            <ul>
+                <li><a href="#consumables">Consumables</a></li>
+                <li><a href="#glyphs">Glyphs</a></li>
+                <li><a href="#professions">Professions</a></li>
+                <li><a href="#races">Races</a></li>
+                <li><a href="#rotation">Rotation</a></li>
+                <li><a href="#talents">Talents</a></li>
+            </ul>
+        </nav>
+
         <section class="infopanel">
-            <h2><img src="./media/icons/warriorclassicon.png" alt="Cataclysm Icon">Talents</h2>
+            <h2><img src="/media/icons/warriorclassicon.png" alt="Cataclysm Icon" id="talents">Talents</h2>
             <h3>Single Target Talents:</h3>
-            <img src="/media/singletargettalenttree.png" class="talents">
+            <img src="/media/singletargettalenttree.png" class="talents" alt="Single Target Talent Tree">
             <p>This talent tree is going to be your primary talent spec. In a strictly single target fight this will be roughly a 300-600 dps increase.</p>
             <h3>Sustained AOE Talents:</h3>
-            <img src="/media/sustainedaoetalenttree.png" class="talents">
+            <img src="/media/sustainedaoetalenttree.png" class="talents" alt="Sustained AOE Talent Tree">
             <p>This talent tree is primarily going to be used for sustained aoe fights. Generally only 
                 worth it for 4+ targets and incredible for heroic dungeons. In this talent spec, 
                 you will use thunderclap to spread your rend to all enemies within range.</p>
             <p> The one point in drums of war is super flexible anywhere else in the arms tree, however if you are going to be interrupting in a raid encounter it will save you rage.</p>
+            <p>If you are only going to have one arms spec I'd recommend using the Sustained AOE spec.</p>
         </section>
         
         <section class="infopanel">
-            <h2><img src="./media/icons/shatteringthrowicon.png" alt="Shattering Throw Icon">Glyphs</h2>
-            <h3>Prime:</h3>
-            <span class="glyphs">
-                <p><img src="/media/icons/overpowericon.png"> Overpower, 
-                    <img src="/media/icons/mortalstrikeicon.png"> Mortal Strike, 
-                    <img src="media/icons/slamicon.png">Slam</p>
-            </span>
-            <h3>Major</h3>
-            <span class="glyphs">
-                <p><img src="/media/icons/overpowericon.png"> Overpower, 
-                    <img src="/media/icons/mortalstrikeicon.png"> Mortal Strike, 
-                    <img src="media/icons/slamicon.png">Slam</p>
-            </span>
+            <h2><img src="/media/icons/shatteringthrowicon.png" alt="Shattering Throw Icon" id="glyphs">Glyphs</h2>
+            
+            <div class="glyph-container">
+                <div class="glyph-group">
+                    <h3>Prime:</h3>
+                    <ul class="glyph-list">
+                        <li><img src="/media/icons/overpowericon.png" alt="Overpower Icon"> Overpower</li>
+                        <li><img src="/media/icons/mortalstrikeicon.png" alt="Mortal Strike Icon"> Mortal Strike</li>
+                        <li><img src="media/icons/slamicon.png" alt="Slam Icon"> Slam</li>
+                    </ul>
+                </div>
+                
+                <div class="glyph-group">
+                    <h3>Major:</h3>
+                    <ul class="glyph-list">
+                        <li><img src="/media/icons/sweepingstrikesicon.png" alt="Sweeping Strikes Icon"> Sweeping Strikes</li>
+                        <li><img src="/media/icons/cleaveicon.png" alt="Cleave Icon"> Cleaving</li>
+                        <li><img src="media/icons/colossussmashicon.png" alt="Colossus Smash Icon"> Colossus Smash</li>
+                    </ul>
+                    <p class="glyph-note">For the third Major glyph slot, Colossus Smash is highly recommended over Rapid Charge. The extra sunder application is more beneficial than a 1-second cooldown reduction on Charge.</p>
+                </div>
+                
+                <div class="glyph-group">
+                    <h3>Minor:</h3>
+                    <ul class="glyph-list">
+                        <li><img src="/media/icons/berserkerrageicon.png" alt="Berserker Rage Icon"> Berserker Rage</li>
+                        <li><img src="/media/icons/battleshouticon.png" alt="Battle Shout Icon"> Battle</li>
+                        <li><img src="/media/icons/commandingshouticon.png" alt="Commanding Shout Icon"> Command</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     
