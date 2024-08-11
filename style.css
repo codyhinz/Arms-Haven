@@ -178,7 +178,7 @@ h1 {
 }
 
 .page-nav li {
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: center;
     margin: 0.1rem;
 }
